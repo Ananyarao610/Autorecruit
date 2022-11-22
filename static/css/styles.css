@@ -1,0 +1,92 @@
+body {
+    background: url(../images/bg3.jpg);
+    background-size: cover;
+    /* background-color: rgb(255, 0, 0); */
+    height: 100%;
+    margin: 0;
+    font-family: "Oswald", sans-serif;
+  }
+  #wrapper {
+    min-height: 100%;
+  }
+
+  input[type="text"], input[type="number"], input[type="tel"], input[type="date"] {
+    border: none;
+    border-radius: 5px;
+}
+  
+  input[type="checkbox"] {
+    border: none;
+    transform: scale(2);
+    margin-right: 11px;
+    margin-top: 20px;
+    margin-left: 30%;
+    color: #fff;
+  }
+  
+  .scroll {
+    margin-top: -50px;
+    font-size: 20px;
+    color: rgb(73, 107, 111);
+    overflow-y: scroll;
+    height: 500px;
+    width: 1200px;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .sub {
+    margin-top: 50px;
+    margin-left: 46%;
+    text-align: center;
+    padding: 10px 30px;
+    background-color: rgb(26, 211, 150);
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    border-radius: 6px;
+  }
+  
+  .sub:hover {
+    background-color: rgb(131, 213, 167);
+  }
+  
+  .selfform > label {
+    display: inline-block;
+    width: 140px;
+    margin-left: 40%;
+    padding-top: 10px;
+    text-align: left;
+  }
+  
+  .animate {
+    text-align: center;
+    margin-top: 0px;
+    font-size: 9.5vw;
+    line-height: 11vw;
+    margin-left: 5px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(/static/images/logos/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 -40px;
+    animation: back 10s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
+  }
+  .main {
+    margin-top: 100px;
+    border-radius: 30%;
+    /* background-color: rgba(255, 255, 255, 0.911); */
+    margin-inline: auto;
+    width: 50%;
+    /* background-color: white; */
+    /* border: 2px solid rgba(135, 135, 135, 0.726); */
+    opacity: 96%;
+    backdrop-filter: blur(10px);
+    --webkit-backdrop-filter: blur(10px);
+  }
+  @keyframes back {
+    100% {
+      background-position: 2000px -40px;
+    }
+  }
