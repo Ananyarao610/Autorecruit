@@ -1,0 +1,441 @@
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&subset=greek-ext');
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    font-family: 'Noto Sans', sans-serif;  
+    
+   
+}
+
+.logo img{
+    position: absolute;
+    width: 150px;
+    top:5px;
+    left:10px;
+    height:100px;
+}
+.section{
+    width:100%;
+    min-height:100vh;
+    background-color: rgb(255, 255, 255);
+}
+.container{
+    width:80%;
+    display:block;
+    margin:auto;
+    padding-top:100px;
+}
+.content-section{
+    float:left;
+    width:55%;
+}
+.image-section{
+    position: absolute;
+    top:-15px;
+    left:25px;
+    width:1100px;
+    height: 300px;
+    
+}
+
+.title h1{
+   /* position: relative;   */
+    text-transform: uppercase;
+   /* top: 8px;
+    left: 360px;   */
+    color:#0c0a0a;
+    /*font-family: 'Dancing Script', cursive;*/
+    position:absolute;
+    top:-5px;left:520px;
+    font-weight:550;
+    font-size: 110px;
+    color: #02246A;
+    
+    /*font-family: 'Alegreya', serif;*/
+    font-family: 'Alumni Sans', sans-serif;
+    
+}
+.content-section .title{                 
+    text-transform: uppercase;
+    font-size: 28px;
+    
+}
+.content-section .content h3{
+    margin-top: 20px;
+    color:#5d5d5d;
+    font-size:21px;
+}
+.content-section .content p{
+    margin-top:10px;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #fff;
+}
+.content-section .social{
+    margin-top: 40px 40px;
+}
+.content-section .social i{
+    color:#fffafa;
+    font-size:30px;
+    padding:0px 10px;
+}
+.content-section .social i:hover{
+    color:#161515;
+}
+@media screen and (max-width:768px){
+    .container{
+        width:80%;
+        display:block;
+        margin:auto;
+        padding-top:50px;
+    }
+    .content-section{
+        float:none;
+        width:100%;
+        display:block;
+        margin:auto;
+    }
+    .image-section{
+        float:none;
+        width:100%;
+      
+    }
+    .image-section img{
+        width:100%;
+        height:auto;
+        display:block;
+        margin:auto;
+    }
+    .content-section .title{
+        text-align:center;
+        font-size:19px;
+        
+    }
+    .content-section .social{
+        text-align:center;
+    }
+}
+.toppic img{
+    position:absolute;  
+    
+   /* top:10px;  
+   padding: 30px 100px;  */
+    
+   top:110px;
+
+    width: 100%;
+    height: 400px;
+    object-fit: fill;
+  /*  background: rgba(50, 126, 52, 0.1);  */
+}
+.box{
+	position:absolute;
+	left:8%;
+	top: 650px;
+    width: 300px;
+	transform: translate(-30%,-20%);
+    background-color: #02246A;
+	border-radius:5px;
+	padding:30px 10px;
+}
+.box h1{
+    font-family: 'Alumni Sans', sans-serif;
+    color:#FFCA56;
+    font-size: 50px;
+    position: absolute;
+    top:10px;
+    left:90px;
+}
+
+
+.box1{
+	position:absolute;
+	left:33%;
+	top: 650px;
+    width: 300px;
+	transform: translate(-30%,-20%);
+    background-color: #02246A;
+	border-radius:5px;
+	padding:30px 10px;
+}
+.box1 h1{
+    font-family: 'Alumni Sans', sans-serif;
+    color:#FFCA56;
+    font-size: 50px;
+    position: absolute;
+    top:10px;
+    left:30px;
+}
+.box2{
+	position:absolute;
+	left:58%;
+	top: 650px;
+    width: 300px;
+	transform: translate(-30%,-20%);
+    background-color: #02246A;
+	border-radius:5px;
+	padding:30px 10px;
+}
+.box2 h1{
+    font-family: 'Alumni Sans', sans-serif;
+    color:#FFCA56;
+    font-size: 50px;
+    position: absolute;
+    top:10px;
+    left:80px;
+}
+.box3{
+	position:absolute;
+	left:83%;
+	top: 650px;
+    width: 300px;
+	transform: translate(-30%,-20%);
+    background-color: #02246A;
+	border-radius:5px;
+	padding:30px 10px;
+   
+}
+.box3 h1{
+    font-family: 'Alumni Sans', sans-serif;
+    color:#FFCA56;
+    font-size: 50px;
+    position: absolute;
+    top:10px;
+    left:45px;
+}
+.image-section img{
+    position: absolute;
+    width:260px;
+    height:150px;
+    top:633px;
+    left:15px;
+   
+}
+.pic2 img{
+    position: absolute;
+    top:615px;
+    left:375px;
+    width:260px;
+    height: 150px;
+   
+}
+.pic3 img{
+    position: absolute;
+    top:615px;
+    left:710px;
+    width:260px;
+    height: 150px;
+   
+}
+.pic4 img{
+    position: absolute;
+    top:615px;
+    left:1050px;
+    width:260px;
+    height: 150px;
+}
+.quote h2{
+    font-weight:550;
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+    position:absolute;
+    left:320px;
+    top:250px;
+    color: #fff;
+}
+.quote h4{
+    font-weight:550;
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+    position:absolute;
+    left:910px;
+    top:350px;
+    color: #fff;
+}
+.box4{
+	position:absolute;
+	left: 30%;
+	top: 1260px;
+    width: 1300px;
+	transform: translate(-30%,-20%);
+    background-color: #02246A;
+	border-radius:5px;
+	padding:30px 10px;
+    height:230px;
+    
+   
+}
+
+
+@keyframes slideShow{
+    0% {width:100%;left:100%}
+    5% { left:0}
+    25% {left:0}
+    30% {width:100%;left:-100%}
+    30.001% {width:0;left:-100%}
+    100% { width:0%;left:100%}
+}
+.slider{
+    width:80%;
+    height:70vh;
+    position:relative;
+    overflow:hidden;
+    top:350px;
+    left:100px
+}
+.slide{
+    position:absolute;
+    width:100%;
+    height:inherit;
+    overflow:hidden;
+    animation:slideShow 14s infinite;
+    background-position: center;
+    background-size: cover;
+    background-color:black;
+   /* color:rgb(20, 14, 14);      */
+    font-size: 36px;
+    display:flex;
+    justify-content:center; 
+    align-items:flex-end; 
+    font-size: 20px;
+    top:40px;
+    
+    
+    
+}
+.slide:nth-child(1){
+    left:0%;
+    color:rgb(215, 226, 58);
+    animation-delay: 11s;
+    background-image: url("https://www.incimages.com/uploaded_files/image/1920x1080/getty_473909426_129584.jpg");
+}
+.slide:nth-child(2){
+    color:rgb(215, 226, 58);
+    animation-delay: 8s;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoirC9QJ88S6Vs1_AMGDaxCAmIR76zurmwwg66ChWqV36yop9DYW7ArSFHJMnM_gkrujE&usqp=CAU");
+}
+.slide:nth-child(3){
+    color:rgb(215, 226, 58);
+    animation-delay: 5s;
+    background-image: url("https://cfw.paymoapp.com/wp-content/uploads/2018/05/Paymo_Team_Game.jpg");
+}
+.slide:nth-child(4){
+    color:rgb(50, 218, 59);
+    animation-delay: 2s;
+    background-image: url("https://images.squarespace-cdn.com/content/v1/514ba64be4b09fef8c0a47f1/1541733537793-KU55JFKJZW6DREEWPS06/IMG_3377.JPG?format=1000w");
+}
+.slide:nth-child(5){
+    color:rgb(10, 6, 27);
+    animation-delay: -1s;
+    background-image: url("https://cdn.internationalstudent.com/images/international-student/three-teenagers-in-classroom-600x400.jpg");
+}
+
+
+*{
+	margin:0;
+	padding:0;
+	font-family: 'Lato', sans-serif;
+	
+
+
+}
+
+.header{
+	min-height:100vh;
+	width:100%;
+	
+	background-position: center;
+	background-size: cover;
+	position:relative;
+}
+
+.header h4{
+	margin-top: 20px;
+	color: #02246A;
+}
+
+.header h2{
+	margin-top: 20px;
+	color: #02246A;
+}
+
+
+nav{
+	display:flex;
+	padding:2% 6%;
+	justify-content: space-between;
+	align-items:center;
+}
+
+nav img{
+
+	width:150px;
+}
+
+.nav-links{
+	flex:1;
+	text-align:right;
+
+}
+
+.nav-links ul li{
+	list-style: none;
+	display:inline-block;
+	padding:8px 12px;
+	position:relative;
+}
+
+
+.nav-links ul li a{
+	color: #fff;
+	text-decoration:none;
+	font-size:15px;
+}
+
+.nav-links ul li::after{
+	content:'';
+	width:0%;
+	height:2px;
+	background:#02246A;
+	display:block;
+	margin:auto;
+	transition:0.5s
+}
+
+.nav-links ul li:hover::after{
+	width: 100%
+}
+
+
+
+.footer{
+	width:100%;
+	text-align : center;
+	padding : 30px 0;
+	background-color : #ffcccb 
+}
+	
+.footer h4{
+	margin-bottom: 25px;
+	margin-top: 20px;
+	font-weight: 600;
+
+}
+	
+.icons .fa {
+	color:#02246A;
+	margin: 0 13px;
+	cursor: pointer;
+	padding: 18px 0;
+
+}
+
+.footer h2
+{ 
+	margin-top: 15px;
+	color: #ff9800;
+}
+
