@@ -12,10 +12,16 @@ app = Flask(__name__)
 
 
 #app.config['UPLOADS'] = 'C:/Users/Ananya/OneDrive/Desktop/se/static/uploads'
-app.config['UPLOADS'] = '/home/ananya/Downloads/se_new/se/static/uploads'
+app.config['UPLOADS'] = 'D:/checkse/Autorecruit/static/uploads'
+
+@app.route("/coun")
+def coun():
+  return render_template("coun.html")
+
 @app.route("/")
 def home():
   return render_template("home.html")  
+  
 @app.route("/resu")
 def resu():
   #score=res.main[0]()
@@ -47,7 +53,7 @@ def upload():
           return("/static/uploads/"+filename)    """
         global p 
         
-        p = "/home/ananya/Downloads/se_new/se/static/uploads/"+ filename
+        p = "D:/checkse/Autorecruit/static/uploads/"+ filename
         basedir = os.path.abspath(os.path.dirname(__file__))
         pdf.save(os.path.join(basedir, app.config["UPLOADS"], filename))
         #return("/static/uploads/"+filename)
@@ -56,6 +62,8 @@ def upload():
   #return("/static/uploads/"+filename)
   print("before 3rd return")
   return render_template("display.html")
+
+
 
 
 def f():
