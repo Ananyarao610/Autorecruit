@@ -139,6 +139,22 @@ def main():
     #create_word_cloud(clean_jd) 
     job_description= 'web html javascript'
     print("THIS IS THE RESUME",resume)
+
+    resume_check = resume
+    print("this is resume_checkkkkkkkkkkk",resume_check)
+    li = list(resume_check.split(" "))
+    print("this is RESUME_CHECK",li)
+    threshold = li.index('gpa')
+    print('this is threshold',threshold)
+    txt = li[threshold+2]
+
+    x = txt.rstrip('\x0c')
+    g = float(x)
+    if g<7.5:
+        low_gpa ='  '.join(['not eligible due to gpa being less than 7.5'])
+        return(0,low_gpa)
+
+        
     text = [resume, job_description] 
     resume = clean_job_decsription(resume)
     print("this is resume",resume)
