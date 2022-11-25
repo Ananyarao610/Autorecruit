@@ -165,10 +165,12 @@ def main():
 
     print(job_description)
     
-    job_description = {'webdev': ['html','css','js'], 'datascience':['math','stats','python']}
+    #job_description = {'webdev': ['html','css','js'], 'datascience':['math','stats','python']}
+    
     for j in job_description:
         if j not in resume:
-            missing_words.append(j)    
+            missing_words.append(j)  
+    missing_words= ' '.join(missing_words)  
     print("missing",missing_words)
     ## Get a Match score
     k=get_resume_score(text)

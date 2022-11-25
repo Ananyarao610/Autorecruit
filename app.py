@@ -19,9 +19,17 @@ app.config['UPLOADS'] = '/home/ananya/Ananya/SE Project/Autorecruit/static/uploa
 def coun():
   return render_template("coun.html")
 
+@app.route("/home")
+def home1():
+      return render_template("home.html")
+
 @app.route("/")
 def home():
   return render_template("home.html")  
+
+@app.route("/about")
+def about():
+      return render_template("about.html")
   
 @app.route("/resu")
 def resu():
