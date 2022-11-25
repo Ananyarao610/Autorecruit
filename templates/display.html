@@ -3,65 +3,57 @@
         <link rel="stylesheet" media="all" href="static\css\display_style.css" type="text/css">
     </head> 
     <body background="static\images\banner.jpg"> 
-         
-        <input type="hidden" id="myData" value="{{objs}}">
-        <input type ="hidden" id = "new_p" value="{{new_p}}">
-        <h1 style="color:aqua; padding-left:300px; padding-top:300px;">This is the score : {{objs}}</h1>
-        <h2 style="color:aqua; padding-left:300px;">This is the missing words : {{miss}}</h1>s
-
-
-            <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
-                <nav class="navigation navbar navbar-expand-md navbar-dark">
-                  <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#navbarsExample04"
-                    aria-controls="navbarsExample04"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                  >
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarsExample04">
-                    <ul class="navbar-nav mr-auto">
-                      <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="service.html">Services</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="blog.html">Blog</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact Us</a>
-                      </li>
-                      <li class="nav-item d_none">
-                        <a class="nav-link" href="#"
-                          ><i class="fa fa-search" aria-hidden="true"></i
-                        ></a>
-                      </li>
-                    </ul>
-                  </div>
-                </nav>
-              </div>
-
-        <form action="/resu" method="get">
-            <button  type="submit" style="background-color:#02246a;
-            border: none;
-            color: white;
-            padding: 16px 32px;
-            text-decoration: none;
-            margin: 4px 2px;
-            cursor: pointer;">click here for resumeee</button>
-          <!--<a href="display.html">click here for display</a>-->
-          </form>
-
+      <div class="_body" style="margin: -70px 0 30px;">
+        
 
           
+        <input type="hidden" id="myData" value="{{objs}}">
+        <input type ="hidden" id = "new_p" value="{{new_p}}">
+        <h1 style="font-size: 70px;
+        font-weight: 600;
+        background-image: linear-gradient(to left, #553c9a, #b393d3);
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        padding-left:550px;
+        padding-top:100px;">RESULTS</h1>
+        <h3 style="font-weight: bolder; color:beige; padding-bottom: 20px;"><center> Your resume is evaluated for the chosen domain and a score is generated. The words missing from your resume is also genrated.</center></h3>
+
+        <div class="_box" style=" margin: auto;
+        max-width: 70%;
+        padding: 50px;
+        background: beige;
+        border-radius: 3px;
+        box-shadow: 0 0 35px rgba(10, 10, 10,0.12);
+        -moz-box-shadow: 0 0 35px rgba(10, 10, 10,0.12);
+        -webkit-box-shadow: 0 0 35px rgba(10, 10, 10,0.12);">
+        
+        <h1 style="font-weight: bolder; color:rgb(54, 66, 153); padding-left:200px; ">Total Score : {{objs}}</h1>
+        <h1 style="font-weight: bolder; color:rgb(54, 66, 153); padding-left:200px;">Words Missing in Resume : {{miss}}</h1>
+        <form action="/resu" method="get">
+          <button  type="submit" style="background-color:#02246a;
+          border: none;
+          color:white;
+          padding: 16px 32px;
+          text-decoration: none;
+          margin: 4px 2px;
+          cursor: pointer;
+          margin-left: 750px;">GET RESULTS</button>
+        <!--<a href="display.html">click here for display</a>-->
+        </form>
+
+          </div>
+          <br>
+          <br><br><br><br><br>
+            
+          <a style="background-color:white;
+          border: none;
+          color:#02246a;
+          padding: 16px 32px;
+          text-decoration: none;
+          margin: 4px 2px;
+          cursor: pointer;
+          margin-left: 850px;
+          " href="home.html"> BACK</a>
     </body> 
     </html>
