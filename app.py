@@ -13,8 +13,8 @@ app = Flask(__name__)
 
 #app.config['UPLOADS'] = 'C:/Users/Ananya/OneDrive/Desktop/se/static/uploads'
 #app.config['UPLOADS'] = 'D:/checkse/Autorecruit/static/uploads'
-
-app.config['UPLOADS'] = '/home/ananya/Ananya/SE Project/Autorecruit/static/uploads'
+app.config['UPLOADS'] = 'C:\\Users\\Ananya\\OneDrive\\Desktop\\se_se_new\\Autorecruit\\static\\uploads'
+#app.config['UPLOADS'] = '/home/ananya/Ananya/SE Project/Autorecruit/static/uploads'
 @app.route("/coun")
 def coun():
   return render_template("coun.html")
@@ -63,8 +63,8 @@ def upload():
         global p 
         
         #p = "D:/checkse/Autorecruit/static/uploads/"+ filename
-        p = "/home/ananya/Ananya/SE Project/Autorecruit/static/uploads/"+ filename
-
+        #p = "/home/ananya/Ananya/SE Project/Autorecruit/static/uploads/"+ filename
+        p = "C:\\Users\\Ananya\\OneDrive\\Desktop\\se_se_new\\Autorecruit\\static\\uploads\\" +filename
 
         basedir = os.path.abspath(os.path.dirname(__file__))
         pdf.save(os.path.join(basedir, app.config["UPLOADS"], filename))
